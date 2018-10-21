@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+.body-background{
+    background-color: darkgrey;
+}
+.nav__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: black;
+    padding: 2%;
+    
+
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.section{
+    display: flex;
+    min-height: 90vh;
+    padding: 1%;
+    flex-wrap: nowrap;
+}
+
+@media only screen and (max-width:768px){
+    .nav__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        padding: 2%;
+}
+
+}
+
+.hero__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/29572571_1263637777102892_4387141305386440805_n.jpg?_nc_cat=106&_nc_ht=scontent-waw1-1.xx&oh=00c113488538fbd01b4a82d0da4d930c&oe=5C42FEA0");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+}
+
+.hero-text{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+
+.about-me__container{
+    display: flex;
+    align-items: center;
+    
+}
+.about-me-text{
+    text-align: center;
+    padding:3%;
+}
+.about-me-img{
+    width: 50%;
+    height: 50%;
+}
+
+@media only screen and (max-width:768px){
+    .about-me__container{
+        flex-direction: row-reverse;
+    }
+}
+
+.technology__container{
+    display: flex;
+}
+
+.technology-img{
+    width: 100%;
+    height:auto;
+    padding:5%;
+}
+.technology-text{
+    text-align: center;
+}
+
+@media only screen and (max-width:768px){
+    
+    .technology__container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        
+    }
+    technology__container__column{
+        display:flex;
+        flex-direction: row;
+
+    }
+    .technology-img{
+        width: 40%;
+        height:auto;
+        
+    }
+}
