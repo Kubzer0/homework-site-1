@@ -64,34 +64,37 @@
 .about-me-text{
     text-align: center;
     font-size: 1.2rem;
+    line-height: 200%;
     padding:3%;
 }
 .about-me-img{
-    width: 50%;
-    height: 50%;
+    width: 35%;
+    height: auto;
+    border-radius:50%;
 }
 
-@media only screen and (max-width:768px){
-    .about-me__container{
-        flex-direction: row-reverse;
-    }
-}
 
 .technology__container{
     display: flex;
+    justify-content: space-around;
+
 }
 
 .technology-img{
     width: 100%;
     height:auto;
     padding:5%;
+    border-radius:50%;
 }
 .technology-text{
     text-align: center;
 }
 
 @media only screen and (max-width:768px){
-    
+
+    .about-me__container{
+        flex-direction: row-reverse;
+    }
     .technology__container{
         display:flex;
         flex-direction: column;
@@ -99,13 +102,15 @@
         align-items:center;
         
     }
-    technology__container__column{
+    .technology__container-column{
         display:flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: row;
 
     }
     .technology-img{
-        width: 40%;
+        width: 100%;
         height:auto;
         
     }
